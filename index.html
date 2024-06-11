@@ -1,0 +1,395 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"
+    />
+    <link rel="shortcut icon" href="assets/FAVICON.png" type="image/x-icon" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <title>RZ Code</title>
+  </head>
+  <body>
+    <main class="main">
+      <nav class="nav-bar"></nav>
+
+      <header class="header" id="cabecalho">
+        <div class="container">
+          <div class="flex">
+            <a href="index.html">
+              <img
+                class="logoprincipal"
+                src="assets/Logo Horizontal.png"
+                alt="Logo da Empresa"
+              />
+            </a>
+            <nav class="desktop-menu">
+              <ul>
+                <li><a href="#servicos">O QUE FAZEMOS</a></li>
+                <li><a href="#produtos">PRODUTOS</a></li>
+                <li><a href="#portfolio">PORTFÓLIO</a></li>
+                <li><a href="#sociedade">MEMBROS</a></li>
+                <li><a href="#sobre">QUEM SOMOS</a></li>
+                <li><a href="#contatos">CONTATOS</a></li>
+              </ul>
+            </nav>
+            <div class="menu-icon" onclick="toggleMenu()">&#9776;</div>
+          </div>
+        </div>
+        <div class="side-menu" id="side-menu">
+          <a href="javascript:void(0)" class="closebtn" onclick="closeMenu()"
+            >&times;</a
+          >
+          <a href="#servicos">O QUE FAZEMOS</a>
+          <a href="#produtos">PRODUTOS</a>
+          <a href="#portfolio">PORTFÓLIO</a>
+          <a href="#sociedade">MEMBROS</a>
+          <a href="#sobre">QUEM SOMOS</a>
+          <a href="#contatos">CONTATOS</a>
+        </div>
+      </header>
+      <section class="banner">
+        <h1 class="efect">CODIFICANDO O FUTURO COM MAESTRIA</h1>
+      </section>
+
+      <section class="o_que_fazemos" id="servicos">
+        <h1>O que fazemos</h1>
+        <div class="container-servicos">
+          <div class="left">
+            <div class="image-container">
+              <img src="assets/pantera 2 png.png" alt="Mascote da Empresa" />
+            </div>
+          </div>
+          <div class="right">
+            <ul>
+              <li>
+                <i class="bi bi-phone-flip"></i> Criação de Apps Mobile:
+                Soluções inovadoras e eficientes na palma da sua mão.
+              </li>
+              <br />
+              <li>
+                <i class="bi bi-pc-display-horizontal"></i> Criação de Sites:
+                Sites profissionais e responsivos para destacar sua presença
+                online.
+              </li>
+              <br />
+              <li>
+                <i class="bi bi-cpu"></i> Criação de Sistemas: Sistemas
+                personalizados sob medida para otimizar seus processos.
+              </li>
+              <br />
+              <li>
+                <i class="bi bi-brush"></i> UI/UX Design: Experiências de
+                usuário excepcionais com design intuitivo e envolvente.
+              </li>
+            </ul>
+          </div>
+        </div>
+      </section>
+
+      <section class="produtos" id="produtos">
+        <div class="products">
+          <h1>Produtos</h1>
+        </div>
+        <div class="info-container">
+          <article class="info-box">
+            <img class="erp" src="assets/erp cortado.jpeg" alt="Imagem 1" />
+            <div class="linha"></div>
+            <div class="text-content">
+              <p>
+                O ERP Rz é um sistema completo para pequenas empresas,
+                facilitando o controle de estoque, o registro de vendas, a
+                emissão de notas fiscais, e a gestão financeira. Ele oferece
+                relatórios personalizados que fornecem insights valiosos para a
+                tomada de decisões. Com o ERP Rz, sua empresa garante eficiência
+                operacional e conformidade fiscal.
+              </p>
+            </div>
+          </article>
+          <article class="info-box">
+            <div class="img-container">
+              <img
+                class="estetic-vp"
+                src="assets/estetica vip.jpeg"
+                alt="Imagem 2"
+              />
+              <div class="overlay">Em Andamento</div>
+            </div>
+            <div class="linha"></div>
+            <div class="text-content">
+              <p>
+                EstéticaVIP é um aplicativo inovador para salões de beleza,
+                desde grandes negócios até pequenos empreendedores. Ele funciona
+                como uma rede social, permitindo o agendamento de serviços no
+                local ou a domicílio. O app oferece um feed de notícias para
+                compartilhar dicas e informações sobre beleza. Com EstéticaVIP,
+                você pode facilmente encontrar e agendar serviços de beleza,
+                além de se manter atualizado com as últimas tendências do setor.
+              </p>
+            </div>
+          </article>
+          <article class="info-box">
+            <div class="img-container">
+              <img
+                class="autoassist"
+                src="assets/AutoAssist.jpeg"
+                alt="Imagem 3"
+              />
+              <div class="overlay">Em Andamento</div>
+            </div>
+            <div class="linha"></div>
+            <div class="text-content">
+              <p>
+                Nosso aplicativo oferece status em tempo real do reparo do
+                carro, notificações push, e um registro detalhado de todos os
+                serviços realizados. Permite comunicação direta com a oficina,
+                agendamento de serviços, solicitação de orçamentos online, e
+                avaliações sobre a experiência. Além disso, oferece delivery
+                para busca e entrega do veículo em casa e chamada de guincho em
+                emergências.
+              </p>
+            </div>
+          </article>
+        </div>
+      </section>
+
+      <div class="swiper mySwiper" id="portfolio">
+        <h1>Portfólio</h1>
+        <p>clique para ser redirecionado</p>
+        <div class="swiper-wrapper">
+          <div class="swiper-slide">
+            <a
+              href="https://pousadaerestauranterainhadomar.com"
+              target="_blank"
+            >
+              <img
+                src="assets/rainhadomar.png"
+                alt="Restaurante rainha do Mar"
+              />
+            </a>
+          </div>
+
+          <div class="swiper-slide">
+            <a id="alert-link" href="#">
+              <img
+                src="assets/Paulo_de_Tasso.png"
+                alt="Oficina Paulo de Tarso"
+              />
+            </a>
+          </div>
+        </div>
+
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          loop: true,
+          speed: 2000,
+          effect: "cube",
+          cubeEffect: {
+            slideShadows: false,
+            shadow: false,
+          },
+          autoplay: {
+            delay: 2000,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+          },
+        });
+      </script>
+
+      <section class="contact-form-section">
+        <div class="form-container">
+            <h1>O que você procura?</h1>
+            <form id="contact-form" action="https://formspree.io/f/xqkrvglw" method="POST">
+                <div class="form-group">
+                    <label for="details">Informações Detalhadas</label>
+                    <textarea id="details" name="details" placeholder="Digite aqui as informações detalhadas" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="contact">WhatsApp ou E-mail</label>
+                    <input type="text" id="contact" name="contact" placeholder="Digite aqui seu telefone ou e-mail" required />
+                </div>
+                <div class="botao">
+                    <button type="submit" id="submit-btn">Enviar</button>
+                </div>
+            </form>
+        </div>
+      </section>
+
+      <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            const form = document.getElementById("contact-form");
+            const submitButton = document.getElementById("submit-btn");
+
+            form.addEventListener("submit", function (event) {
+                event.preventDefault(); 
+
+                // Envia a requisição via AJAX
+                const formData = new FormData(form);
+                const xhr = new XMLHttpRequest();
+                xhr.open("POST", form.action, true);
+                xhr.setRequestHeader("Accept", "application/json");
+
+                xhr.onreadystatechange = function () {
+                    if (xhr.readyState !== XMLHttpRequest.DONE) return;
+                    if (xhr.status === 200) {
+                        alert("O formulário foi enviado com sucesso! Muito obrigado!");
+                        form.reset();
+                    } else {
+                        alert("Ocorreu um erro ao enviar o formulário. Por favor, tente novamente mais tarde.");
+                    }
+                };
+
+                xhr.send(formData);
+            });
+        });
+      </script>
+
+      <div class="swiper mySwiper membros" id="sociedade">
+        <h1 id="sociedade-txt">Membros</h1>
+        <div class="swiper-wrapper div-slides">
+          <div class="swiper-slide slider">
+            <img src="assets/anthony.jpeg" alt="fototeste" />
+            <div>
+              <p class="name">Anthony</p>
+              <p class="function">CEO e Fundador</p>
+            </div>
+          </div>
+          <div class="swiper-slide slider">
+            <img src="assets/caio.jpeg" alt="fototeste" />
+
+            <div>
+              <p class="name">Caio</p>
+              <p class="function">CEO</p>
+            </div>
+          </div>
+          <div class="swiper-slide slider">
+            <img src="assets/fototeste.jpeg" alt="fototeste" />
+
+            <div>
+              <p class="name">Vandré</p>
+              <p class="function">Administrador de Banco de Dados</p>
+            </div>
+          </div>
+          <div class="swiper-slide slider">
+            <img src="assets/samuel.jpeg" alt="fototeste" />
+            <div>
+              <p class="name">Samuel</p>
+              <p class="function">
+                Desenvolvedor Front End e Diretor de Design
+              </p>
+            </div>
+          </div>
+        </div>
+        <div class="swiper-button-next btn-prox"></div>
+        <div class="swiper-button-prev btn-ant"></div>
+        <div class="swiper-pagination"></div>
+      </div>
+
+      <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+
+      <script>
+        var swiper = new Swiper(".mySwiper", {
+          loop: true,
+          speed: 2000,
+          effect: "cube",
+          cubeEffect: {
+            slideShadows: false,
+            shadow: false,
+          },
+          autoplay: {
+            delay: 2000,
+          },
+          navigation: {
+            nextEl: ".swiper-button-next",
+            prevEl: ".swiper-button-prev",
+          },
+          pagination: {
+            el: ".swiper-pagination",
+            type: "bullets",
+          },
+        });
+      </script>
+
+      <section class="sobre efect" id="sobre">
+        <div class="quem-somos">
+          <h1 class="efect">Quem Somos</h1>
+          <div class="texto-sobre">
+            <p class="efect p1">
+              A RZ Code é uma empresa de tecnologia sediada em Mossoró, a
+              segunda maior cidade do Rio Grande do Norte, dedicada ao
+              desenvolvimento de soluções inovadoras que potencializam a
+              programação para melhorar vidas. Seu compromisso vai além de
+              simples códigos e algoritmos, sendo impulsionado pela paixão em
+              facilitar e aprimorar a vida das pessoas por meio da tecnologia,
+              enxergando cada linha de código como uma oportunidade para gerar
+              impactos positivos na sociedade.
+            </p>
+
+            <p class="efect p2">
+              Com uma visão que transcende o presente, a RZ Code busca ser
+              reconhecida não apenas por seus produtos e serviços, mas também
+              pelas contribuições significativas que oferece à comunidade e ao
+              mundo da tecnologia. A empresa está constantemente em busca da
+              excelência, da inovação e da determinação, almejando ser um modelo
+              de sucesso no setor tecnológico, elevando o padrão de qualidade em
+              todas as suas iniciativas.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <footer class="encontrar" id="contatos">
+        <h1 class="efect">Onde nos encontrar</h1>
+        <div class="footer-container efect">
+          <div class="icones">
+            <a href="https://www.instagram.com/rzcodeco.mo/" target="_blank">
+              <i class="bi bi-instagram"></i>
+              <span>Instagram</span>
+            </a>
+            <a href="https://github.com/RzCode-Co" target="_blank">
+              <i class="bi bi-github"></i>
+              <span>GitHub</span>
+            </a>
+            <a href="https://www.linkedin.com/in/rz-code-company-459651305/" target="_blank">
+              <i class="bi bi-linkedin"></i>
+              <span>LinkedIn</span>
+            </a>
+            <a href="https://api.whatsapp.com/send?phone=558496035493" target="_blank">
+              <i class="bi bi-whatsapp"></i>
+              <span>WhatsApp</span>
+            </a>
+          </div>
+        </div>
+      </footer>      
+      <div class="footer-copyright">
+        <p>&copy; 2024 RzCode. Todos os direitos reservados. Produzido em 2024.</p>
+    </div>
+    </main>
+  </body>
+
+  <script src="script.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+</html>
